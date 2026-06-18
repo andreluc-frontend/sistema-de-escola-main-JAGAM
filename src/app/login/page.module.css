@@ -1,0 +1,147 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url(/images/background_login.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -2%;
+  padding: 1rem;
+}
+
+.card {
+  background: rgba(30, 60, 20, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 440px;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.3px;
+}
+
+.input {
+  width: 100%;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.input option {
+  background: #2d4a1e;
+  color: #fff;
+}
+
+.input:focus {
+  border-color: #a3d45f;
+  box-shadow: 0 0 0 3px rgba(163,212,95,0.2);
+}
+
+.mensagemErro {
+  background: rgba(220, 53, 69, 0.2);
+  border: 1px solid rgba(220, 53, 69, 0.5);
+  color: #ffb3b3;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.mensagemSucesso {
+  background: rgba(40, 167, 69, 0.2);
+  border: 1px solid rgba(40, 167, 69, 0.5);
+  color: #a3f0b0;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.button {
+  width: 100%;
+  background: #6A951F;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 0.3rem;
+}
+
+.button:hover:not(:disabled) {
+  background: #7db024;
+  transform: translateY(-1px);
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.rodape {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.65);
+}
+
+.link {
+  color: #c6e87a;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #ddf0a0;
+}

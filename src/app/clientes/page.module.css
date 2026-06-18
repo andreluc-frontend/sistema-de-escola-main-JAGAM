@@ -1,0 +1,421 @@
+.container {
+  min-height: 100vh;
+  padding: 2rem 2.5rem;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+    url(/images/background_clientes.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -2%;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin: 0.2rem 0 0;
+}
+
+.btnNovo {
+  background: #6A951F;
+  color: #fff;
+  padding: 0.65rem 1.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btnNovo:hover {
+  background: #7db024;
+}
+
+.filtros {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.inputBusca {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.inputBusca::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.inputBusca:focus {
+  border-color: #a3d45f;
+}
+
+.selectFiltro {
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(30,60,20,0.8);
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.selectFiltro:focus {
+  border-color: #a3d45f;
+}
+
+.selectFiltro option {
+  background: #2d4a1e;
+}
+
+.btnLimpar {
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: #fff;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnLimpar:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.mensagemErro {
+  background: rgba(220, 53, 69, 0.2);
+  border: 1px solid rgba(220, 53, 69, 0.5);
+  color: #ffb3b3;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.mensagemSucesso {
+  background: rgba(40, 167, 69, 0.2);
+  border: 1px solid rgba(40, 167, 69, 0.5);
+  color: #a3f0b0;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.loadingBox {
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  padding: 3rem;
+}
+
+.vazio {
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  background: rgba(30, 60, 20, 0.75);
+  backdrop-filter: blur(6px);
+  padding: 1.4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #6A951F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.nome {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin: 0 0 0.3rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badgeAdmin {
+  background: rgba(238, 201, 37, 0.25);
+  color: #fde681;
+  border: 1px solid rgba(238, 201, 37, 0.4);
+}
+
+.badgeProfessor {
+  background: rgba(100, 180, 255, 0.2);
+  color: #a8d8ff;
+  border: 1px solid rgba(100, 180, 255, 0.35);
+}
+
+.badgeAluno {
+  background: rgba(163, 212, 95, 0.2);
+  color: #c6e87a;
+  border: 1px solid rgba(163, 212, 95, 0.35);
+}
+
+.info {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 0.85rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.infoItem {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+  word-break: break-word;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+}
+
+.botoes {
+  display: flex;
+  gap: 0.65rem;
+  justify-content: flex-end;
+}
+
+.editar {
+  padding: 0.5rem 1.1rem;
+  background: rgba(238, 201, 37, 0.25);
+  color: #fde681;
+  border: 1px solid rgba(238, 201, 37, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.editar:hover {
+  background: rgba(238, 201, 37, 0.4);
+}
+
+.deletar {
+  padding: 0.5rem 1.1rem;
+  background: rgba(220, 53, 69, 0.2);
+  color: #ffb3b3;
+  border: 1px solid rgba(220, 53, 69, 0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.deletar:hover {
+  background: rgba(220, 53, 69, 0.35);
+}
+
+.soVisualizar {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+/* Formulário de edição */
+.formEdicao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.editandoLabel {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  font-style: italic;
+  margin: 0;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+}
+
+.inputEdicao {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.inputEdicao option {
+  background: #2d4a1e;
+}
+
+.inputEdicao:focus {
+  border-color: #a3d45f;
+}
+
+.erroEdicao {
+  font-size: 0.83rem;
+  color: #ffb3b3;
+  background: rgba(220,53,69,0.15);
+  border: 1px solid rgba(220,53,69,0.4);
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.botoesEdicao {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.btnSalvar {
+  flex: 1;
+  padding: 0.55rem;
+  background: #6A951F;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btnSalvar:hover:not(:disabled) {
+  background: #7db024;
+}
+
+.btnSalvar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnCancelar {
+  flex: 1;
+  padding: 0.55rem;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btnCancelar:hover:not(:disabled) {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Paginação */
+.paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.btnPagina {
+  padding: 0.6rem 1.3rem;
+  background: rgba(30,60,20,0.8);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btnPagina:hover:not(:disabled) {
+  background: rgba(106,149,31,0.6);
+}
+
+.btnPagina:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.paginaInfo {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+}

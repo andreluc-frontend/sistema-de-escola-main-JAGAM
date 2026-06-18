@@ -1,0 +1,242 @@
+.loadingScreen {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e8f0d8;
+  padding-bottom: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.headerTitulo {
+  margin: 0;
+  color: #2d4a1e;
+  font-size: 1.8rem;
+}
+
+.headerSub {
+  margin: 0.25rem 0 0;
+  color: #666;
+  font-size: 0.92rem;
+}
+
+.headerAcoes {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btnVerUsuarios {
+  padding: 0.6rem 1.2rem;
+  background: #6A951F;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btnVerUsuarios:hover {
+  background: #7db024;
+}
+
+.logoutBtn {
+  padding: 0.6rem 1.2rem;
+  background: #fff;
+  color: #c0392b;
+  border: 1.5px solid #c0392b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.logoutBtn:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+.mensagemErro {
+  background: #fff0f0;
+  border: 1px solid #f5c6cb;
+  color: #c0392b;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e8f0d8;
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.cardLabel {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  font-weight: 600;
+}
+
+.cardNumero {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2d4a1e;
+}
+
+.numAdmin { color: #b8860b; }
+.numProfessor { color: #185fa5; }
+.numAluno { color: #3B6D11; }
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitulo {
+  color: #2d4a1e;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #6A951F;
+}
+
+.vazio {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.table thead {
+  background: #f7faf0;
+}
+
+.table th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+}
+
+.table tbody tr:hover {
+  background: #fafdf5;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badgeAdmin {
+  background: #fff8dc;
+  color: #b8860b;
+  border: 1px solid #f0d080;
+}
+
+.badgeProfessor {
+  background: #e6f1fb;
+  color: #185fa5;
+  border: 1px solid #b5d4f4;
+}
+
+.badgeAluno {
+  background: #eaf3de;
+  color: #3B6D11;
+  border: 1px solid #c0dd97;
+}
+
+.acao {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.acaoInsert {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.acaoUpdate {
+  background: #fff9c4;
+  color: #f57f17;
+}
+
+.acaoDelete {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.ip {
+  background: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.verTodos {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #6A951F;
+  font-size: 0.88rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.verTodos:hover {
+  text-decoration: underline;
+}

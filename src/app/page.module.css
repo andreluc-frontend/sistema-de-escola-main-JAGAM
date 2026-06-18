@@ -1,0 +1,190 @@
+.container {
+  min-height: 100vh;
+  background-image:
+  linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+  ),
+  url(/images/background_home.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -30;
+  color: white;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.description {
+
+  font-size: 20px;
+
+  color: #dfe1cb;
+
+  margin-bottom: 40px;
+
+  line-height: 1.6;
+
+}
+
+.buttons {
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+}
+
+.primaryButton {
+  background: #EEC925;
+  color: white;
+  padding: 16px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.primaryButton:hover {
+
+  background: #fde681;
+
+  transform: translateY(-3px);
+
+}
+
+.secondaryButton {
+
+  border: 2px solid white;
+
+  color: white;
+
+  padding: 16px 28px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  transition: 0.3s;
+
+}
+
+.secondaryButton:hover {
+
+  background: white;
+
+  color: #0f2a12;
+
+}
+
+.card {
+
+  width: 320px;
+
+  background:
+    rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+.cardTop {
+
+  background: #EEC925;
+
+  padding: 20px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+}
+
+.cardContent {
+  padding: 40px;
+  text-align: center;
+}
+
+.cardContent h3 {
+
+  font-size: 70px;
+
+  margin-bottom: 10px;
+
+}
+
+.cardContent p {
+
+  color: #fde681;
+
+  font-size: 18px;
+
+}
+
+@media (max-width: 900px) {
+
+  .hero {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .title {
+
+    font-size: 42px;
+
+  }
+
+  .card {
+
+    width: 100%;
+
+  }
+
+}
